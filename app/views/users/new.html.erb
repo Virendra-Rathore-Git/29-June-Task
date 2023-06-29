@@ -1,0 +1,20 @@
+
+
+<%= form_with model: @user do |form| %>
+
+<%= form.label :name, "Name:" %><br><br>
+<%= form.text_field :name %><br><br>
+
+<%= form.label :email, "Email ID:" %><br><br>
+<%= form.text_field :email %><br><br>
+
+<%= form.label :status, "Status:" %><br><br>
+<%= form.text_field :status %><br><br>
+
+<%= form.label :password, "Password:" %><br><br>
+<%= form.text_field :password %><br><br>
+
+<%= form.submit "Submit" %>
+<%=link_to "Back",'/'%><br><br>
+
+<% end %>       

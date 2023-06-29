@@ -1,0 +1,10 @@
+	<center>
+		<h1>Activated/Inactivate Users</h1>
+		<h2>
+			<%@user.each do |user|%>
+			<%= user.name%><br>
+			<%end%>
+		</h2><br>
+		<%=link_to "Back",'/'%>
+
+	</center>

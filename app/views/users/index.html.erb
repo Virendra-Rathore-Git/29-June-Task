@@ -1,0 +1,26 @@
+<body style="background-color:gray;"></body>
+<center>
+  <marquee> <h1 style="color:orange;">Welcome to my Application</h1></marquee>
+  <%=link_to "Create New User",'/users/new'%><br><br>
+  <%=link_to "Show Activate Users",'/users_data/activated'%><br><br>
+  <%=link_to "Show Inactivate Users",'/users_data/inactivated'%><br><br>
+
+
+  <div style="border: 1px solid black;width:300px;height: 200px;background-color: silver;">
+   <h2 style="color: blue;">Login</h2>
+   <%= flash[:error] %>
+
+   <%= form_with url:'/log' do |form| %>
+
+   <%= form.label :email, "Email ID:" %><br>
+   <%= form.text_field :email %><br>
+
+   <%= form.label :password, "Password:" %><br>
+   <%= form.text_field :password %><br>
+
+   <%= form.submit "Login" %><br>
+
+   <% end %>
+ </div>
+
+</center>
